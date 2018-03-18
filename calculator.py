@@ -5,7 +5,7 @@ premium_rate  = 0.165
 Threshold = 3500
  
 def pay(salary):
-    if salary >= 3500:
+    if salary > 3500:
         taxable_income = salary*(1- premium_rate) -3500
         if 0 < taxable_income <= 1500:
             tax = taxable_income * 0.03
