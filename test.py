@@ -33,10 +33,10 @@ class Config(object):
             for line in file:
                 line_a = line.split('=')[0].strip()
                 line_b = float(line.split('=')[1].strip())
-                config[line_a] = config[line_b]
+                config[line_a] = line_b
                 print('line_a'+':'+ line_a)
                 print('line_b',':',line_b)
-        print(config)
+        return config
 
         """
         补充代码：
